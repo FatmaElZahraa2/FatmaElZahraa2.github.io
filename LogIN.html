@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica;
+            font-size: 18px;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(300deg, ivory, rgb(192, 127, 83));
+        }
+
+        .main {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+            color: rgb(192, 127, 83);
+        }
+
+        p span {
+            background: #fff;
+            padding: 0 10px;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        fieldset {
+            border: 3px solid rgb(192, 127, 83);
+            width: 350px;
+            border-radius: 10px;
+
+        }
+
+        label {
+            display: inline-block;
+            padding: 8px 8px;
+            width: 130px;
+            vertical-align: top;
+
+        }
+
+        input {
+            font-size: inherit;
+            border-radius: 10px;
+            border: 3px solid rgb(192, 127, 83);
+            width: 350px;
+
+        }
+
+        .iput {
+            width: 350px;
+            vertical-align: middle;
+            background: linear-gradient(300deg, ivory, rgb(192, 127, 83));
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            font-style: italic;
+
+        }
+
+        label a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p><span>Login</span></p>
+        <br>
+        <form method="get" action="index.html">
+
+            <label for="lname">Username : </label>
+            <br>
+            <input type="text" id="lname" name="lname" required tabindex="1">
+            <br>
+
+            <br>
+            <label for="pw">Password : </label>
+            <input type="password" id="pw" name="pw" tabindex="5">
+            <br>
+            <br>
+
+            <h6 style="margin-left: 175px;"><a href=# style="color:rgb(206,209,217);">Forget Password ?</a></h6>
+            <br>
+            <input type="submit" value="Login" class="iput">
+
+
+            <br><br><br>
+            <span class=Div-foot style="vertical-align: middle; text-align: center;margin-left: 90px;">
+                <a href="http://www.instagram.com"><img src="insta1.png" style="height: 30px;width: 30px;"></a>
+                &nbsp; &nbsp; &nbsp;
+                <a href="http://www.twitter.com"><img src="tw1.png" style="height: 30px;width: 30px;"></a>
+                &nbsp; &nbsp;
+                &nbsp;
+                <a href="http://www.behance.com"><img src="be1.png" style="height: 30px;width: 30px;"></a>
+            </span>
+
+        </form>
+    </div>
+</body>
+
+</html>

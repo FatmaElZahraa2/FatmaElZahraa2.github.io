@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Registeration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica;
+            font-size: 18px;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(300deg, ivory, rgb(192, 127, 83));
+        }
+
+        .main {
+            max-width: 440px;
+            width: 100%;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+            color: rgb(192, 127, 83);
+        }
+
+        p span {
+            background: #fff;
+            padding: 0 10px;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        fieldset {
+            border: 3px solid rgb(192, 127, 83);
+            width: 350px;
+            border-radius: 10px;
+
+        }
+
+        label {
+            display: inline-block;
+            padding: 8px 8px;
+            width: 130px;
+            vertical-align: top;
+
+        }
+
+        input {
+            font-size: inherit;
+            border-radius: 10px;
+            border: 3px solid rgb(192, 127, 83);
+
+        }
+
+        .iput {
+            width: 350px;
+            vertical-align: middle;
+            background: linear-gradient(300deg, ivory, rgb(192, 127, 83));
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            font-style: italic;
+            margin-left: 20px;
+
+        }
+
+        label a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p><span>Registeration</span></p>
+        <br>
+        <form method="get" action="THANKU.html">
+
+            <label for="fname">Full Name : </label>
+            <input type="text" id="fname" name="fname" required tabindex="2" pattern="[A-Z]{5}">
+            <br>
+
+            <label for="lname">Username: </label>
+            <input type="text" id="uname" name="uname" required tabindex="1">
+            <br>
+
+            <label for="emil">Email : </label>
+            <input type="email" id="emil" name="emil" required tabindex="3">
+            <br>
+
+            <label for="pw">Password : </label>
+            <input type="password" id="pw" name="pw" tabindex="5">
+            <br>
+
+            <label for="r-pw">Confirm Password: </label>
+            <input type="password" id="r-pw" name="r-pw" tabindex="4">
+            <br>
+
+            <br>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="rb1" name="rb">
+                <span> Male <span>
+                        <br>
+                        <input type="radio" id="rb2" name="rb">
+                        <span> Female <span>
+            </fieldset>
+            <br>
+            <input type="checkbox">
+            <label style="display: inline;"><a href="#">Terms And Conditions</a></label>
+            <br><br>
+            <input type="submit" value="Register" class="iput">
+
+        </form>
+    </div>
+</body>
+
+</html>
